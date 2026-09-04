@@ -3,21 +3,21 @@ print("Welcome to ai assistant")
 message = ["Hello! How can I help you?","How are you!","I'm Terminal AI"]
 
 while True:
-    user = input()
-    if user.lower() == "hello":
+    user = input().lower()
+    if user == "hello":
         print(message[0])
-    elif user.lower() == "how are you":
+    elif user == "how are you":
         print(message[1])
-    elif user.lower() == "what is your name":
+    elif user == "what is your name":
         print(message[2])
-     
-
-
-    if user.lower() == "exit" :
-        print("Good  bye")
+    elif user == "exit":
+        print("Good Bye")
         break
     else:
+        print("I dont understand that yet")
         continue
+     
+
 
     
         
