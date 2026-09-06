@@ -1,21 +1,24 @@
+from datetime import datetime   
+
 print("Welcome to ai assistant")
 
-message = ["Hello! How can I help you?","How are you!","I'm Terminal AI"]
 
 while True:
+
     user = input().lower()
     if user == "hello":
-        print(message[0])
-    elif user == "how are you":
-        print(message[1])
-    elif user == "what is your name":
-        print(message[2])
+        print("Hello! How can I help you?")
+    elif user == "time":
+        print(datetime.now().time())
+    elif user == "date":
+        print(datetime.now().date())
+    elif user == "clear":
+        print("clearing data...")
     elif user == "exit":
         print("Good Bye")
         break
     else:
         print("I dont understand that yet")
-        continue
      
 
 
